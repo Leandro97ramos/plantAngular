@@ -1,0 +1,298 @@
+.container-login {
+    display: flex;
+    flex-direction: column;
+    background-color: (180deg, rgba(51, 163, 170, 0.85) 0%, rgba(16, 112, 118, 0.85) 100%),
+
+}
+
+
+.container-izq,
+.container-der {
+    width: 100%;
+    height: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+
+.container-izq {
+
+    background:
+        linear-gradient(180deg, rgba(51, 163, 170, 0.85) 0%, rgba(16, 112, 118, 0.85) 100%),
+        url('../../assets/imageLogin.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.container-texto-login {
+    width: 361px;
+    color: #ffffffec;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+}
+
+.container-texto-login h2 {
+    color: #ffff;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 58px;
+    margin: 0;
+}
+
+.container-texto-login .subtitle {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+
+
+
+
+
+.container-texticon .text-icon {
+    display: flex;
+}
+
+.container-texticon .text-icon h3 {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+}
+
+.container-texticon .text-icon p {
+    margin-top: 3px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 17px;
+}
+
+.container-texticon .text {
+    margin-left: 12px;
+}
+
+
+
+
+.container-der {
+    width: 100%;
+    height: 400px;
+    background-color: #ffff;
+    border-radius: 21px;
+
+}
+
+.container-input-login {
+    width: 100%;
+    margin-top: 50px;
+}
+
+.container-input-login h2 {
+    font-size: 36.48px;
+    font-weight: 600;
+    line-height: 54.71px;
+    margin: 0;
+
+}
+
+.container-input-login h3 {
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 48px;
+    margin: 0px 0px 30px 0px;
+
+}
+
+.container-input-login h2,
+.container-input-login h3 {
+    text-align: center;
+}
+
+form .campo {
+    display: flex;
+    position: relative;
+    margin-bottom: .8rem;
+}
+
+form .campo label,
+.campo img {
+    position: absolute;
+    color: #84818A;
+
+
+}
+
+
+form .campo label {
+    top: 18px;
+    left: 16px;
+    font-size: 14px;
+    transition: font-size .2s ease, top .2s ease;
+}
+
+form .campo img {
+    top: 21px;
+    right: 19px;
+    width: 18px;
+    height: 12px;
+}
+
+
+form .campo input {
+    flex: 1;
+    width: 393px;
+    height: 48px;
+    border: 1px solid #DCDBDD;
+    border-radius: 12px;
+}
+
+form .campo input:focus {
+    outline: none;
+}
+
+form .campo input:focus+label {
+    font-size: 12px;
+    top: -8px;
+    background: #ffff;
+}
+
+
+.second-input {
+    margin: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.second-input a {
+    color: #47464A;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    margin: 15px;
+}
+
+
+.second-input button {
+    width: 100%;
+    height: 48px;
+    background: #33A3AA;
+    gap: 0px;
+    border: none;
+    border-radius: 12px;
+    opacity: 0px;
+
+}
+
+.second-input button span {
+    color: #ffff;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+}
+
+form {
+    margin: 0px 26px;
+}
+
+form p {
+    color: #84818A;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 17px;
+}
+
+form p a {
+    color: #33A3AA;
+
+}
+
+
+
+
+@media (min-width:900px) {
+    .container-login {
+
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    .container-izq,
+    .container-der {
+        width: 796px;
+        height: 900px;
+        padding-left: 8%;
+
+    }
+
+    .container-izq,
+    .container-der {
+        display: flex;
+        align-items: center;
+    }
+
+
+    .container-input-login {
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+    }
+
+
+
+
+    /* Parte derecha*/
+
+    .container-der {
+        width: 675px;
+        height: 900px;
+        position: relative;
+        right: 1%;
+        background-color: #ffff;
+        border-radius: 21px;
+
+    }
+
+    .container-input-login {
+        width: auto;
+    }
+
+    .container-input-login h2,
+    .container-input-login h3 {
+        text-align: left;
+    }
+
+    form {
+        margin: 0;
+    }
+    .second-input{
+        flex-direction: row;
+    }
+    .second-input a{
+        margin: 0;
+    }
+    .second-input button {
+        width: 164px;
+        height: 48px;
+        background: #33A3AA;
+        gap: 0px;
+        border: none;
+        border-radius: 12px;
+        opacity: 0px;
+
+    }
+}
+
+

@@ -1,0 +1,105 @@
+<div class="container-dashboard">
+
+
+    <nav class="container-opc-vertical">
+        <div class="container-logo">
+            <img src="" alt="">
+        </div>
+
+        <div class="opc-vertical">
+            <!--
+
+                <a href=""><img src="../assets/icon/Dashboard.png" alt=""></a>
+                <a href=""><img src="../assets/icon/Monitoreo por planta.png" alt=""></a>
+                <a href=""><img src="../assets/icon/Histórico de sensores.png" alt=""></a>
+                <a href=""><img src="../assets/icon/Histórico de plantas.png" alt=""></a>
+                <a href=""><img src="../assets/icon/Cerrar sesión.png" alt=""></a>
+            -->
+        </div>
+
+    </nav>
+    <div class="container-panel">
+        <!--nav horizontal-->
+        <nav class="container-opc-horizontal">
+            <h2>Monitoreo global</h2>
+
+            <div class="opc-horizontal">
+                <!--
+
+                    <a href="" class="opc-h"><img src="../assets/icon/Idioma.png" alt=""></a>
+                    <a href="" class="opc-h"><img src="../assets/icon/Ajustes.png" alt=""></a>
+                    <a href="" class="opc-h"><img src="../assets/icon/notification.png" alt=""></a>
+                    <a href="" class="opc-h">Nombre usuario</a>
+                -->
+            </div>
+
+        </nav>
+        <div class="container-box1">
+
+            <app-cards-box1 *ngFor="let card of cards" [title]="card.title" [number]="card.number"
+                [alertType]="card.alertType">
+            </app-cards-box1>
+
+
+        </div>
+        <div class="dash">
+            <div class="dash-info">
+                <h3>Plantas</h3>
+                <button>+ Crear nueva planta</button>
+                <!--agregar linea separadora-->
+            </div>
+            <!--Tala del dashboard-->
+            <table class="dash-table">
+                <thead class="thead">
+                    <tr>
+
+                        <th>Pais</th>
+                        <th>Nombre de la planta</th>
+                        <th>Lecturas</th>
+                        <th>Alertas medias</th>
+                        <th>Alertas rojas</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+
+                <tr>
+                    <td class="country-name"><strong>(flag) Pais</strong></td>
+                    <td class="plant-name">
+                        <p>Nombre de la planta</p>
+                    </td>
+                    <td><strong class="val">1</strong></td>
+                    <td><strong class="val">2</strong></td>
+                    <td><strong class="val">3</strong></td>
+                    <td><a>...</a></td>
+                </tr>
+                <tr>
+                    <td class="country-name"><strong>(flag) Pais</strong></td>
+                    <td class="plant-name">
+                        <p>Nombre de la planta</p>
+                    </td>
+                    <td><strong class="val">1</strong></td>
+                    <td><strong class="val">2</strong></td>
+                    <td><strong class="val">3</strong></td>
+                    <td><a>...</a></td>
+                </tr>
+                <tr>
+                    <td class="country-name"><strong>(flag) Pais</strong></td>
+                    <td class="plant-name">
+                        <p>Nombre de la planta</p>
+                    </td>
+                    <td><strong class="val">1</strong></td>
+                    <td><strong class="val">2</strong></td>
+                    <td><strong class="val">3</strong></td>
+                    <td><a>...</a></td>
+                </tr>
+            </table>
+        </div>
+
+
+        <div class="container-box2">
+            <app-cards-box2></app-cards-box2>
+
+        </div>
+    </div>
+    <!--fin container dash-->
+</div>
